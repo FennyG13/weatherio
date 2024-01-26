@@ -3,11 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Simple weather app</title>
+    <title>Weatherio</title>
   </head>
   <body>
-    <footer>This project was coded by Fenny Gao</footer>
+    <div class="weather-app">
+      <header>
+        <h1>天气预报🌦️ <br />Weather app</h1>
+        <form id="search-form">
+          <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-container">
+          <div class="current-weather">
+            <h1 class="city">Boston</h2>
+            <div class="current-temperature">
+              <span class="current-weather-icon">❄️</span>
+              <span class="current-temp">24</span>
+              <span class="temp-unit">°F</span>
+            </div>
+            <p class="current-description">snow likely</p>
+          </div>
+          <div class="current-weather-details">
+            <h3 class="current-day">Friday, 20:55</h3>
+            <div class="current-details">
+              <p class="humidity">💧 <strong>Humidty:</strong> 80%</span>
+              <p class="wind-speed"> 💨 <strong>Wind:</strong> 6.17km/h</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>Coded by 👩🏻‍💻 <a href="https://github.com/FennyG13" target="_blank">Fenny Gao</a></p>
+        <p>
+          This project is open-sourced on <a href="https://github.com/FennyG13/weatherio">GitHub</a> and hosted on
+          <a href="https://weatherio-project.netlify.app/" target="_blank">Netlify</a>
+          <br />© 2024
+        </p>
+      </footer>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
