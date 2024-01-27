@@ -45,6 +45,7 @@ header {
     padding: 20px;
     line-height: 1;
     border-radius: 5px;
+    cursor: pointer;
   }
 }
 
@@ -65,11 +66,14 @@ header {
 
   .city {
     padding: 10px;
-    font-size: 48px;
+    font-size: 40px;
     margin: 0;
-    text-transform: uppercase;
     font-weight: bold;
     color: #f65282;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   .current-description {
@@ -93,21 +97,25 @@ header {
     top: -8px;
     font-size: 32px;
     margin-right: 10px;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .current-temp {
     font-size: 60px;
     font-weight: bolder;
-    position: relative;
-    left: -13px;
+    /* position: relative; */
+    /* left: -13px; */
+    /* left: -23px;
+    top: -36px; */
   }
 
   .temp-unit {
     font-size: 20px;
     position: relative;
-    top: -27px;
-    left: -20px;
+    /* top: -27px;
+    left: -20px; */
+    top: -66px;
+    left: -28px;
   }
 }
 
