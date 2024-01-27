@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Weatherio</title>
   </head>
@@ -15,26 +16,26 @@
       <header>
         <h1>天气预报🌦️ <br />Weather app</h1>
         <form id="search-form">
-          <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+          <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-input" />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-container">
           <div class="current-weather">
-            <h1 class="city">Boston</h2>
+            <h1 class="city" id="current-city">Boston</h2>
             <div class="current-temperature">
-              <span class="current-weather-icon">❄️</span>
-              <span class="current-temp">24</span>
+              <span class="current-weather-icon" id="icon">❄️</span>
+              <span class="current-temp" id="current-temp-value">24</span>
               <span class="temp-unit">°F</span>
             </div>
-            <p class="current-description">snow likely</p>
+            <p class="current-description" id="description">snow likely</p>
           </div>
           <div class="current-weather-details">
-            <h3 class="current-day">Friday, 20:55</h3>
+            <h3 class="current-day" id="current-date">Friday, 20:55</h3>
             <div class="current-details">
-              <p class="humidity">💧 <strong>Humidty:</strong> 80%</span>
-              <p class="wind-speed"> 💨 <strong>Wind:</strong> 6.17km/h</span>
+              <p>💧 <strong>Humidty:</strong> <span class="humidity" id="humidity-value"></span>%</p>
+              <p>💨 <strong>Wind:</strong> <span class="humidity" id="wind-value"></span> km/h</p>
             </div>
           </div>
         </div>
