@@ -1,33 +1,33 @@
 function displayWeather(response) {
   let temperature = Math.round(response.data.temperature.current);
-  let temperatureElement = document.querySelector("#current-temp-value");
+  let temperatureElement = document.querySelector(".current-temp-value");
   temperatureElement.innerHTML = `${temperature}`;
-  let cityElement = document.querySelector("#current-city");
+  let cityElement = document.querySelector(".city");
   cityElement.innerHTML = response.data.city;
 
-  let descriptionElement = document.querySelector("#description");
+  let descriptionElement = document.querySelector(".current-description");
   let weatherDescription = response.data.condition.description;
   descriptionElement.innerHTML = `${weatherDescription}`;
 
-  let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector(".current-weather-icon");
   let weatherIcon = response.data.condition.icon_url;
   iconElement.innerHTML = `<img src="${weatherIcon}"/>`;
 
-  let humidityElement = document.querySelector("#humidity-value");
+  let humidityElement = document.querySelector(".current-humidity");
   humidityElement.innerHTML = response.data.temperature.humidity;
 
-  let windSpeedElement = document.querySelector("#wind-value");
+  let windSpeedElement = document.querySelector(".current-wind");
   windSpeedElement.innerHTML = response.data.wind.speed;
 
-  let currentDay = document.querySelector("#current-date");
   let now = new Date();
+  let currentDay = document.querySelector(".current-day");
   currentDay.innerHTML = formatDate(now);
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
   let day = date.getDay();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
