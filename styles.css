@@ -138,6 +138,12 @@ header {
   top: 48px;
 }
 
+hr {
+  margin: 40px 4px;
+  width: 93%;
+  opacity: 0.2;
+}
+
 footer {
   text-align: center;
   color: #888888;
