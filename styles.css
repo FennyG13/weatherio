@@ -187,7 +187,17 @@ footer {
 
   .forecast-temp .min-temp {
     color: #888888;
+    opacity: 0.9;
+  }
+
+  .forecast-description {
     font-style: italic;
-    opacity: 0.8;
+    font-size: 12px;
+    margin: 10px;
+    color: #888888;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 }

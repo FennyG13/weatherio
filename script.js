@@ -73,8 +73,6 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastElement = document.querySelector(".forecast-container");
   let forecastHtml = "";
 
@@ -92,6 +90,7 @@ function displayForecast(response) {
               <div class="forecast-temp"><span class="max-temp">${Math.round(
                 day.temperature.maximum
               )}</span>° / <span class="min-temp">${Math.round(day.temperature.minimum)}°</span></div>
+              <div class="forecast-description">${day.condition.description}</div>
             </div>
           </div>
         </div>`;
