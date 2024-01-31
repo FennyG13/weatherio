@@ -146,3 +146,35 @@ footer {
     color: #885df1;
   }
 }
+
+.forecast-container {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
+  width: 90%;
+
+  .forecast-date {
+    font-size: 24px;
+    color: #885df1;
+    padding: 10px;
+  }
+
+  .forecast-temp {
+    padding: 10px;
+  }
+
+  .forecast-temp .max-temp {
+    color: #f65282;
+  }
+
+  .forecast-temp .min-temp {
+    color: #888888;
+    font-style: italic;
+    opacity: 0.8;
+  }
+}
