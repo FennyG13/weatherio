@@ -170,6 +170,13 @@ footer {
     padding: 10px;
   }
 
+  .forecast-icon {
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
+  }
+
   .forecast-temp {
     padding: 10px;
   }
