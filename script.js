@@ -91,7 +91,7 @@ function displayForecast(response) {
                 src="${day.condition.icon_url}" class="forecast-icon"/>
               <div class="forecast-temp"><span class="max-temp">${Math.round(
                 day.temperature.maximum
-              )}</span> / <span class="min-temp">${Math.round(day.temperature.minimum)}</span></div>
+              )}</span>° / <span class="min-temp">${Math.round(day.temperature.minimum)}°</span></div>
             </div>
           </div>
         </div>`;
